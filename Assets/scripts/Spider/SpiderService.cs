@@ -48,11 +48,9 @@ namespace Puzzle.Spider
                 {
                     Vector3 spiderPos = new Vector3(data.radius * Mathf.Cos(angle * Mathf.Deg2Rad), data.radius * Mathf.Sin(angle * Mathf.Deg2Rad), 0);
                     SpiderController newSpider = new SpiderController(spiderPrefab, spiderPos);
-                    //SpiderView newSpiders = GameObject.Instantiate(spiderPrefab, spiderPos, Quaternion.identity);
+                    
                     newSpider.SetSpiderColor(data.spiderColor);
-                    //newSpiders.spiderColor = data.spiderColor;
                     newSpider.SetViewColor(data.viewColor);
-                    //newSpiders.SetColor(data.viewColor);
 
                     spiders.Add(newSpider);
 
